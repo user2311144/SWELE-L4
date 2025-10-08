@@ -1,0 +1,5 @@
+<%= form_tag sessions_login_path, method: :post do %>
+  <p>ID:<%= text_field_tag 'uid' %></p>
+  <p>Password:<%= password_field_tag 'pass' %></p>
+  <%= submit_tag 'ログイン' %>
+<% end %>

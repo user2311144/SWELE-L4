@@ -6,4 +6,8 @@ class ApplicationController < ActionController::Base
     session[:c] = session[:c].to_i + 1
     render plain: session[:c]
   end
+  def logout
+    reset_session  # セッションを完全に削除します
+    redirect_to '/top/main'  # ログイン画面にリダイレクトします
+  end
 end

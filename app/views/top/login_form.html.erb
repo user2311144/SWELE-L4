@@ -1,0 +1,5 @@
+<%= form_with url: '/top/login', method: :post do |f| %>
+  <p>ID:<%= f.text_field :uid %></p>
+  <p>Password:<%= f.password_field :pass %></p>
+  <%= f.submit 'ログイン' %>
+<% end %>
